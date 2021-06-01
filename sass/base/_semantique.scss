@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: map-get($colors, background_color1);
+    @include no_margin;
+    @include no_padding;
+}

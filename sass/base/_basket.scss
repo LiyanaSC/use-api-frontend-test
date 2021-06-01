@@ -1,0 +1,167 @@
+.arrangement_basket_page {
+    @include direction_row;
+    justify-content: space-around;
+    margin-bottom: nth($pixel_size, 3);
+    flex-wrap: wrap;
+}
+
+.information {
+    @include no_margin;
+    @include no_padding;
+    width: 70%;
+    font-family: $font_family_texte;
+    order: 2;
+    &_title {
+        margin: nth($pixel_size, 1);
+        font-family: $font_family_title;
+        margin-bottom: nth($pixel_size, 2);
+        @media screen and (max-width: 950px) {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &_section {
+        margin-top: nth($pixel_size, 2);
+        margin-bottom: nth($pixel_size, 2);
+        @include direction_row;
+        @media screen and (max-width: 950px) {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.summary {
+    @include direction_column;
+    align-items: center;
+    padding: nth($pixel_size, 2);
+    width: 25%;
+    background-color: map-get($colors, background_color2);
+    font-family: $font_family_texte;
+    @media screen and (max-width: 950px) {
+        width: 100%;
+    }
+    &_title {
+        width: 90%;
+        @media screen and (max-width: 950px) {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &_line {
+        margin: 0;
+        height: nth($pixel_size, 1)/10;
+        width: 90%;
+        background-color: black;
+    }
+    &_detail {
+        width: 90%;
+        @media screen and (max-width: 950px) {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        &_box {
+            border-bottom: 1px gray dashed;
+            padding: nth($pixel_size, 2);
+            &_results {
+                @include direction_row;
+                @include no_margin;
+                @include no_padding;
+                justify-content: flex-end;
+            }
+            &_total {
+                @include direction_column;
+                margin-top: nth($pixel_size, 2);
+                @media screen and (max-width: 950px) {
+                    width: 100%;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            &_articles {
+                color: map-get($colors, third_color);
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                @media screen and (max-width: 950px) {
+                    width: 100%;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            &_price {
+                color: black;
+                font-weight: bold;
+                margin-left: nth($pixel_size, 1);
+                margin-right: nth($pixel_size, 1);
+            }
+        }
+        &_validation {
+            @include width_100;
+            display: flex;
+            justify-content: center;
+            &_btn {
+                background: linear-gradient(0.9turn, map-get($colors, primary_color), map-get($colors, secondary_color));
+                box-shadow: $shadow;
+                height: nth($pixel_size, 4);
+                width: 90%;
+                margin-top: nth($pixel_size, 5);
+                margin-bottom: nth($pixel_size, 5);
+                color: #fff;
+                right: nth($pixel_size, 1);
+                top: nth($pixel_size, 1);
+                border-radius: 20px;
+                border: none;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
+
+.input_space_adaptation {
+    display: flex;
+    flex: 1;
+    @media screen and (max-width: 950px) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.label_client_form {
+    margin-right: nth($pixel_size, 1);
+    margin-left: nth($pixel_size, 1);
+    @media screen and (max-width: 950px) {
+        display: block;
+        width: 100%;
+    }
+}
+
+input {
+    &:invalid {
+        color: map-get($colors, important_color);
+    }
+}
+
+//javascript----------------------------------------------------------------
+.remove {
+    font-size: nth($font_size, 3)/4;
+    color: map-get($colors, important_color);
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    }
+}

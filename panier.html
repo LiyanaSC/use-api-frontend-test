@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Bienvenue dans un monde de douceur: Teddy Bears, Nounours, ourson, ours en peluche partenaires de calins idéals pour vos êtres chers.">
+    <meta name="robots" content="index,follow">
+    <link rel="shortcut icon" type="image/png" href="img/logo_small.png">
+    <!-- _________________________________________________________ style _________________________________________________________ -->
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/29576c135b.js" crossorigin="anonymous"></script>
+
+
+
+    <title>Oridoudou. Mon panier</title>
+</head>
+
+<body>
+    <!-- _________________________________________________________ DEBUT EN TETE _________________________________________________________ -->
+
+    <header class="header">
+        <!-- -->
+        <!-- partie haute header -->
+        <div class="header_upper_part">
+            <!-- logo -->
+            <div class="header_upper_part_logo_box">
+                <a href="index.html"><img src="img/logo_small.png" alt="logo du site fondateur Orinoco"></a>
+            </div>
+
+            <!-- navigation-->
+            <nav class="header_upper_part_nav">
+                <ul class="header_upper_part_nav_list">
+                    <li class=""><a href="#">Connexion</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- _________________________________________________________ FIN ENTETE _________________________________________________________ -->
+
+    <!-- _________________________________________________________ DEBUT EN Main _________________________________________________________ -->
+    <main class="arrangement_basket_page">
+        <!-- récapitulatif achat client-->
+        <aside class="summary">
+            <h2 class="summary_title">Récapitulatif</h2>
+            <div class="summary_line"></div>
+            <div class="summary_detail">
+                <div class="summary_detail_box" id="put_products_in_basket">
+                    <p>Panier (<span id="number_of_product"></span>)</p>
+
+                </div>
+                <div class="summary_detail_box_total" id="total_box">
+                    <p>Total (tva incluse)<span class="summary_detail_box_price" id="add_total"></span></p>
+
+                </div>
+
+            </div>
+
+        </aside>
+        <!-- formulaire clients -->
+        <section class="information">
+            <h1 class="information_title"> Information client</h1>
+            <form name="informationsClient" method="POST" id="basket_validation">
+                <div class="information_section appear0">
+                    <input type="radio" id="madame" name="sexe" aria-label="choix du sexe féminim, madame">
+                    <label for="madame">Madame</label>
+                    <input type="radio" id="monsieur" name="sexe" aria-label="choix sexe masculin, monsieur">
+                    <label for="monsieur">Monsieur</label>
+                </div>
+
+                <div class="information_section appear1">
+                    <label for="lastname" class="label_client_form">Nom* </label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Linon" class="input_space_adaptation" aria-label="taper votre nom de famille" pattern="[A-Za-z-\p{L}]{4,100}" required>
+                    <label for="firstname" class="label_client_form">Prénom* </label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Liyana" class="input_space_adaptation" aria-label="taper votre prénom" pattern="[A-Za-z-\p{L}]{4,100}" required>
+                </div>
+
+                <div class="information_section appear2">
+                    <label for="adress" class="label_client_form">Adresse* </label>
+                    <input type="text" name="adress" id="adress" placeholder="Rue, avenue, quartier, boulevard,..." class="input_space_adaptation" aria-label="taper votre adresse" pattern="[A-Za-z0-9-\p{L}' ]{4,40}" required>
+                </div>
+
+                <div class="information_section appear3">
+                    <label for="zip" class="label_client_form">Code postale </label>
+                    <input type="text" name="zip" id="zip" placeholder="97200" minlength="5" maxlength="5" aria-label="taper votre code postale" class="input_space_adaptation" pattern="[0-9]{5}">
+                    <label for="city" class="label_client_form">Ville* </label>
+                    <input type="text" name="city" id="city" placeholder="Fort-de-France" class="input_space_adaptation" aria-label="taper votre ville" pattern="[A-Za-z-\p{L}]{4,100}" required>
+                </div>
+
+                <div class="information_section appear4">
+                    <label for="email" class="label_client_form">Adresse email* </label>
+                    <input type="email" name="email" id="email" placeholder="monadressemail@maboite.com" class="input_space_adaptation" aria-label="taper votre adresse email" pattern="[0-9a-z@.]{4,100}" required>
+                </div>
+                <div class="summary_detail_validation">
+                    <input type="submit" id="try_to_change_me" class="summary_detail_validation_btn" value="Valider mon panier">
+
+
+                </div>
+
+
+            </form>
+        </section>
+
+
+    </main>
+    <!-- _________________________________________________________ DEBUT FOOTER _________________________________________________________ -->
+
+    <footer class="footer">
+        <div class="footer_nav">
+            <!--partie contacts-->
+            <h2 class="footer_nav_title">Contacts</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" aria-label="contactez-nous par email"><i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="contactez-nous par telephone"><i class="fas fa-phone-square-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="contactez-nous sur facebook"> <i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="suivez-nous sur twitter"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="suivez-nous sur instragram"><i class="fab fa-instagram-square"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="suivez-nous sur snapchat"><i class="fab fa-snapchat-square"></i></a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <!--partie assistance-->
+
+        <div class="footer_nav">
+            <h2 class="footer_nav_title">Asssitance</h2>
+            <nav>
+                <ul class="footer_nav_title_direction">
+                    <li>
+                        <a href="#"> FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Service Clients</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <!--partie garantis-->
+        <div class="footer_nav">
+            <h2 class="footer_nav_title">Garantis</h2>
+            <nav>
+                <ul class="footer_nav_title_direction">
+                    <li>
+                        <a href="#">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="#">Conditions générales de vente</a>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+
+    </footer>
+    <!-- _________________________________________________________ FIN FOOTER _________________________________________________________ -->
+    <!-- _________________________________________________________ DEBUT SCRIPT _________________________________________________________ -->
+    <script type="module" src="javascript/validation_form.js"></script>
+
+
+
+
+    <!-- _________________________________________________________ FIN SCRIPT _________________________________________________________ -->
+
+</body>
+
+</html>

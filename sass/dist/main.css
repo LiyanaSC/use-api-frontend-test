@@ -1,0 +1,409 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1e9f0;
+    margin: 0%;
+    padding: 0%;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ul {
+    display: block;
+    padding: 10px;
+    margin: 0%;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    font-weight: 2rem;
+}
+
+p {
+    padding: 0%;
+    margin: 0%;
+}
+
+select {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;
+}
+
+.header {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_upper_part {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.header_upper_part_logo_box {
+    display: flex;
+    width: 50%;
+}
+
+.header_upper_part_nav {
+    display: flex;
+    width: 50%;
+}
+
+.header_title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mansalva", cursive;
+    font-size: 3rem;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("img/teddy_5.jpg");
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    text-shadow: 0px 5px 10px #888484;
+}
+
+.header_title_font {
+    padding: 0%;
+    margin: 0%;
+}
+
+.site_description {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.main {
+    margin: 0%;
+    margin: 0%;
+    width: 100%;
+}
+
+.main_products {
+    width: 100%;
+}
+
+.main_products_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main_products_title {
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.main_products_results {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.main_products_results_generic {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #888484;
+    width: 95%;
+    padding: 0%;
+    display: flex;
+    background-color: #FFF;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.line {
+    margin: auto;
+    height: 1px;
+    width: 25%;
+    background-color: black;
+}
+
+.results_pics {
+    margin: 10px;
+    padding: 0%;
+    height: 200px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.results_pics_size {
+    object-fit: cover;
+    width: 100%;
+    min-height: 170px;
+    max-height: 170px;
+    object-position: center;
+}
+
+.results_descriptions_title {
+    font-size: 2rem;
+    font-family: "Mansalva", cursive;
+    padding: 0%;
+    margin: 10px;
+    margin-left: 0;
+    color: #da8e34;
+}
+
+.results_descriptions_text {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.results_descriptions_text_price {
+    color: #566f34;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.results_availability {
+    background-color: #a3c17b;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.footer {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("img/macarons.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    min-height: 200px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_nav_title {
+    font-family: "Mansalva", cursive;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.footer_nav_title_direction {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_teddy_bear_result {
+    background-color: #FFF;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+}
+
+.main_teddy_bear_result_pics {
+    height: 500px;
+    position: relative;
+}
+
+.main_teddy_bear_result_pics_size {
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-position: center;
+}
+
+.result_page_description {
+    width: 50%;
+}
+
+.result_page_description_title {
+    font-size: 2rem;
+    font-family: "Mansalva", cursive;
+    padding: 0%;
+    margin: 10px;
+    margin-left: 0;
+    color: #da8e34;
+    width: 50%;
+}
+
+.result_page_description_text {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.result_page_description_text_price {
+    color: #566f34;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.color_choices {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-family: "Source Sans Pro", sans-serif;
+    margin: auto;
+    margin-top: 50px;
+    border: 3px #da8e34 solid;
+    box-shadow: 0px 5px 10px #888484;
+}
+
+.color_choices_title {
+    color: #fff;
+    font-size: 1rem;
+    background-color: #da8e34;
+    padding: 5px;
+    width: 100%;
+}
+
+.color_choices_selection {
+    text-decoration: none;
+    background-color: transparent;
+    height: 30px;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.add_to_basket_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.add_to_basket_box_btn {
+    background: linear-gradient(0.9turn, #8663f5, #a570a2);
+    box-shadow: 0px 5px 10px #888484;
+    height: 40px;
+    width: 30%;
+    margin-top: 50px;
+    color: #fff;
+    right: 10px;
+    top: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.add_to_basket_box_btn:hover {
+    opacity: 0.9;
+}
+
+.arrangement_basket_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.information {
+    margin: 0%;
+    padding: 0%;
+    width: 70%;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.information_title {
+    margin: 10px;
+    font-family: "Mansalva", cursive;
+    margin-bottom: 20px;
+}
+
+.information_section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 25%;
+    background-color: #FFF;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.summary_title {
+    width: 90%;
+}
+
+.summary_line {
+    margin: auto;
+    height: 1px;
+    width: 90%;
+    background-color: black;
+}
+
+.summary_detail {
+    width: 90%;
+}
+
+.summary_detail_box {
+    border-bottom: 1px gray dashed;
+    padding: 20px;
+}
+
+.summary_detail_validation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.summary_detail_validation_btn {
+    background: linear-gradient(0.9turn, #8663f5, #a570a2);
+    box-shadow: 0px 5px 10px #888484;
+    height: 40px;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #fff;
+    right: 10px;
+    top: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.summary_detail_validation_btn:hover {
+    opacity: 0.9;
+}
+
+.input_space_adaptation {
+    display: flex;
+    flex: 1;
+}
+
+.label_client_form {
+    margin-right: 10px;
+    margin-left: 10px;
+}

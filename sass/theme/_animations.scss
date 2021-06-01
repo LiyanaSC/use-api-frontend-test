@@ -1,0 +1,21 @@
+//les apparitions de boites successives
+@keyframes appearance {
+    0% {
+        transform: translate(0%, 100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+}
+
+@for $i from 0 to 5 {
+    .appear#{$i} {
+        animation: appearance 1500ms both;
+        animation-delay: 200ms*$i;
+    }
+}

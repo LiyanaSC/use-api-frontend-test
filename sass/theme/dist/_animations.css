@@ -1,0 +1,37 @@
+@keyframes appearance {
+  0% {
+    transform: translate(0%, 100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+.appear0 {
+  animation: appearance 2000ms both;
+  animation-delay: 0ms;
+}
+
+.appear1 {
+  animation: appearance 2000ms both;
+  animation-delay: 300ms;
+}
+
+.appear2 {
+  animation: appearance 2000ms both;
+  animation-delay: 600ms;
+}
+
+.appear3 {
+  animation: appearance 2000ms both;
+  animation-delay: 900ms;
+}
+
+.appear4 {
+  animation: appearance 2000ms both;
+  animation-delay: 1200ms;
+}

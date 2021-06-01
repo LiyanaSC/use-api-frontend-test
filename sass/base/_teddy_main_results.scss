@@ -1,0 +1,108 @@
+.main_teddy_bear {
+    &_result {
+        background-color: map-get($colors, background_color2);
+        margin: nth($pixel_size, 1);
+        @include direction_row;
+        @include no_margin;
+        @media screen and (max-width: 950px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &_pics {
+            margin: nth($pixel_size, 2);
+            height: nth($pixel_size, 5)*10;
+            position: relative;
+            &_size {
+                object-fit: cover;
+                width: 100%;
+                min-height: 100%;
+                max-height: 100%;
+                object-position: center;
+            }
+        }
+    }
+}
+
+.result_page_description {
+    width: 50%;
+    @media screen and (max-width: 950px) {
+        width: 90%;
+        text-align: center;
+    }
+    &_title {
+        font-size: nth($font_size, 2);
+        font-family: $font_family_title;
+        @include no_padding;
+        margin: nth($pixel_size, 1);
+        margin-left: 0;
+        color: map-get($colors, third_color);
+        width: 50%;
+        @media screen and (max-width: 950px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &_text {
+        font-family: $font_family_texte;
+        &_price {
+            color: darken(map-get($colors, validation_color), 30%);
+            font-weight: bold;
+            font-size: nth($font_size, 2);
+            margin: nth($pixel_size, 1);
+            margin-left: 0;
+            @media screen and (max-width: 950px) {
+                width: 90%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.color_choices {
+    @include direction_column;
+    width: 50%;
+    font-family: $font_family_texte;
+    margin: auto;
+    margin-top: nth($pixel_size, 5);
+    border: 3px map-get($colors, third_color) solid;
+    box-shadow: $shadow;
+    &_title {
+        color: #fff;
+        font-size: 1rem;
+        background-color: map-get($colors, third_color);
+        padding: nth($pixel_size, 1)/2;
+        @media screen and (max-width: 950px) {
+            text-align: left;
+        }
+    }
+    &_selection {
+        text-decoration: none;
+        background-color: transparent;
+        height: 30px;
+        border: none;
+        -webkit-appearance: none;
+    }
+}
+
+.add_to_basket_box {
+    @include width_100;
+    display: flex;
+    justify-content: center;
+    &_btn {
+        background: linear-gradient(0.9turn, map-get($colors, primary_color), map-get($colors, secondary_color));
+        box-shadow: $shadow;
+        height: nth($pixel_size, 4);
+        width: 30%;
+        margin-top: nth($pixel_size, 5);
+        color: #fff;
+        right: nth($pixel_size, 1);
+        top: nth($pixel_size, 1);
+        border-radius: 20px;
+        border: none;
+        margin: nth($pixel_size, 5);
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}

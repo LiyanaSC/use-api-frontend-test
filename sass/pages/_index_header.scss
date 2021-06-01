@@ -1,0 +1,69 @@
+.header {
+    @include no_margin;
+    @include no_padding;
+    @include width_100;
+    @include direction_column;
+    //partie supérieur
+    &_upper_part {
+        @include direction_row;
+        @include width_100;
+        flex-wrap: wrap;
+        //logo
+        &_logo_box {
+            display: flex;
+            width: 50%;
+            @media screen and (max-width: 950px) {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        //navigation
+        &_nav {
+            display: flex;
+            width: 50%;
+            font-size: 2rem;
+            @media screen and (max-width: 950px) {
+                width: 100%;
+            }
+            &_basket {
+                @include direction_row;
+                align-items: center;
+            }
+            &_list {
+                @media screen and (max-width: 950px) {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    &_title {
+        @include width_100;
+        @include direction_column;
+        @include no_margin;
+        padding: nth($pixel_size, 3);
+        justify-content: center;
+        align-items: center;
+        font-family: $font_family_title;
+        font-size: nth($font_size, 3);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("img/teddy_5.jpg");
+        background-position: bottom;
+        background-attachment: fixed;
+        background-size: cover;
+        text-shadow: $shadow;
+        &_font {
+            @include no_padding;
+            @include no_margin;
+            @media screen and (max-width: 950px) {
+                font-size: nth($font_size, 4);
+            }
+        }
+    }
+}
+
+.site_description {
+    font-size: nth($font_size, 2);
+    text-align: center;
+    font-family: $font_family_texte;
+}

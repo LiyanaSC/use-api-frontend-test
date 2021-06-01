@@ -1,0 +1,41 @@
+ul {
+    list-style-type: none;
+    @include no_padding;
+    @include direction_row;
+    @include width_100;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+li {
+    display: block;
+    padding: nth($pixel_size, 1);
+    @include no_margin;
+}
+
+a {
+    width: 100%;
+    text-decoration: none;
+    font-family: $font_family_texte;
+    color: map-get($colors, normal_color);
+}
+
+p {
+    @include no_padding;
+    @include no_margin;
+}
+
+.fas,
+.fab {
+    display: block;
+    font-size: nth($font_size, 2);
+}
+
+select {
+    font-family: $font_family_texte;
+    font-size: nth($font_size, 1);
+}
+
+.fa-shopping-basket {
+    margin-right: nth($pixel_size, 1);
+}

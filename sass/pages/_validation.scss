@@ -1,0 +1,30 @@
+.valadion_page {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("img/pink_bear.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    &_disposition {
+        @include direction_column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        &_title {
+            font-family: $font_family_title;
+        }
+        &_text {
+            font-family: $font_family_texte;
+        }
+        &_lien {
+            font-family: $font_family_texte;
+            font-weight: bold;
+            margin-top: nth($pixel_size, 5);
+            color: map-get($colors, primary_color);
+        }
+    }
+}
+
+.order {
+    font-weight: bold;
+    font-size: nth($font_size, 3)/2;
+}
