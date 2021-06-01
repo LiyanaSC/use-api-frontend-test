@@ -48,7 +48,7 @@ JSON.parse(localStorage.getItem("Produits_du_panier")).forEach((productIntoBaske
 elementcreation('button', "add_to_basket_box_btn", "summary_detail_validation_btn appear1", "total_box");
 document.getElementById("add_to_basket_box_btn").addEventListener('click', e => {
     e.preventDefault();
-    document.location = "index.html";
+    document.location = "https://liyanasc.github.io/use-api-frontend-test/";
 
 })
 
