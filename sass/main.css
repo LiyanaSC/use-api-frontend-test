@@ -161,8 +161,8 @@ select {
     align-items: center;
     font-family: "Mansalva", cursive;
     font-size: 3rem;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.4))), url("img/teddy_5.jpg");
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("img/teddy_5.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.4))), url("../img/teddy_5.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("../img/teddy_5.jpg");
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
@@ -328,8 +328,8 @@ select {
 }
 
 .footer {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.4))), url("img/macarons.jpg");
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("img/macarons.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.4))), url("../img/macarons.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("../img/macarons.jpg");
     background-size: 100%;
     background-position: bottom;
     display: -webkit-box;
@@ -832,8 +832,8 @@ input:invalid {
 }
 
 .valadion_page {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.4))), url("img/pink_bear.jpg");
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("img/pink_bear.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.4))), url("../pink_bear.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("../img/pink_bear.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

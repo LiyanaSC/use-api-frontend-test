@@ -74,7 +74,7 @@ select {
     align-items: center;
     font-family: "Mansalva", cursive;
     font-size: 3rem;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("img/teddy_5.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("../img/teddy_5.jpg");
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
@@ -191,7 +191,7 @@ select {
 }
 
 .footer {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("img/macarons.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)), url("../img/macarons.jpg");
     background-size: 100%;
     background-position: bottom;
     display: flex;
